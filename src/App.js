@@ -10,25 +10,19 @@ class App extends Component {
     pokemon : []
   }
 
-  fetchPokemonData(pokemon) {
-    let url = pokemon.url
-
-    fetch(url)
-    .then(response => response.json())
-    .then(function(pokeData) {
-      console.log(pokeData)
-    })
-  }
   componentDidMount(){
+    const pokeURLS = []
     fetch(baseUrl)
     .then(response => response.json())
-    .then(function(allPokemon) {
+    .then(allPokemon => {
       allPokemon.results.forEach(pokemon => {
-        console.log(pokemon.url)
         fetch(pokemon.url)
         .then(response => response.json())
-        .then(result => this.setState({pokemon : [...this.state.pokemon, result]}))
+        .then(pokemon => {
+          pokeURLS.push(pokemon)
+        })
       })
+      this.setState({pokemon : pokeURLS})
     })
   }
   
