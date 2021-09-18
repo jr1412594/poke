@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import './App.css';
-// import Container from './components/Container';
+import Container from './components/Container';
 
 const baseUrl = 'https://pokeapi.co/api/v2/pokemon?limit=151'
 
 class App extends Component {
 
   state = {
-    pokemon : []
+    pokemons : []
   }
 
   componentDidMount(){
@@ -22,7 +22,7 @@ class App extends Component {
           pokeURLS.push(pokemon)
         })
       })
-      this.setState({pokemon : pokeURLS})
+      this.setState({pokemons : pokeURLS})
     })
   }
   
@@ -33,7 +33,7 @@ class App extends Component {
         
         {/* <h1>{console.log('this is my pokemon key',this.state.pokemon)}</h1> */}
         hello!
-        {/* <Container pokemon={ this.state.pokemon }/> */}
+        <Container pokemons={ this.state.pokemons }/>
       </div>
     );
   }
