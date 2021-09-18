@@ -31,7 +31,6 @@ class App extends Component {
       return (
         <div className="App">
         
-        {/* <h1>{console.log('this is my pokemon key',this.state.pokemon)}</h1> */}
         hello!
         <Container pokemons={ this.state.pokemons }/>
       </div>
