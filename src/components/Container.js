@@ -12,6 +12,7 @@ export default function Container({ pokemons }) {
 
     return(
         <div className='card-container'>
+                dhfsld
             { displayPokemon() }
         </div>
     )

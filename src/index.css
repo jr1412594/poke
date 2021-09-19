@@ -22,12 +22,13 @@ code {
 }
 
 .pokemon-card {
-  max-width: 150%;
+  width: 25%;
   margin: 2rem;
+  background-color:silver;
 }
 
 .pokemon-name {
   color:rgba(255, 255, 0, 0.822);
   font-size: 2rem;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
 }

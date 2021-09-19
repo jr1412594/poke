@@ -8,6 +8,11 @@ export default function Card({ pokemon }) {
                 src={ pokemon.sprites.front_default}
                 alt={ pokemon.id }
             />
+            <div className='specs'>
+                <h3>Height: { pokemon.height }</h3>
+                <h3>Weight: { pokemon.weight }</h3>
+                <h3>Experience: { pokemon.base_experience }</h3>
+            </div>
         </div>
     )
 }
