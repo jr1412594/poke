@@ -1,11 +1,13 @@
 import React from 'react'
 
 export default function Card({ pokemon }) {
+    const typeSpect = pokemon.types[0].type.name
     return (
-        <div className='pokemon-card'>
+        // <div className='pokemon-card'>
+        <div className={typeSpect !== '' ? `pokemon-card-${ typeSpect }` : 'pokemon-card'}>
             <div className='card-head'>
                 <h3 className='pokemon-name'>{ pokemon.name }</h3>
-                <h3>{ pokemon.types[0].type.name }</h3>
+                <h3>{ typeSpect }</h3>
             </div>
             <div className='image-div'>
                 <img

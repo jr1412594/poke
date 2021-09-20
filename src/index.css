@@ -7,7 +7,7 @@ body {
     /* font-family: 'Architects Daughter', cursive; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:whitesmoke;
+  background-color:white;
 }
 
 code {
@@ -37,7 +37,142 @@ code {
   width: 25%;
   max-width: 200px;
   margin: 2rem;
+  background-color:orange;
+  padding: 15px;
+  box-shadow: 0px 0px 0px 8px yellow inset;
+  border-radius: 15px;
+}
+.pokemon-card-grass {
+  width: 25%;
+  max-width: 200px;
+  margin: 2rem;
   background-color:green;
+  padding: 15px;
+  box-shadow: 0px 0px 0px 8px yellow inset;
+  border-radius: 15px;
+}
+.pokemon-card-water {
+  width: 25%;
+  max-width: 200px;
+  margin: 2rem;
+  background-color:blue;
+  padding: 15px;
+  box-shadow: 0px 0px 0px 8px yellow inset;
+  border-radius: 15px;
+}
+.pokemon-card-fire {
+  width: 25%;
+  max-width: 200px;
+  margin: 2rem;
+  background-color:red;
+  padding: 15px;
+  box-shadow: 0px 0px 0px 8px yellow inset;
+  border-radius: 15px;
+}
+.pokemon-card-bug {
+  width: 25%;
+  max-width: 200px;
+  margin: 2rem;
+  background-color:greenyellow;
+  padding: 15px;
+  box-shadow: 0px 0px 0px 8px yellow inset;
+  border-radius: 15px;
+}
+.pokemon-card-poison {
+  width: 25%;
+  max-width: 200px;
+  margin: 2rem;
+  background-color:purple;
+  padding: 15px;
+  box-shadow: 0px 0px 0px 8px yellow inset;
+  border-radius: 15px;
+}
+.pokemon-card-normal {
+  width: 25%;
+  max-width: 200px;
+  margin: 2rem;
+  background-color:aqua;
+  padding: 15px;
+  box-shadow: 0px 0px 0px 8px yellow inset;
+  border-radius: 15px;
+}
+.pokemon-card-electric {
+  width: 25%;
+  max-width: 200px;
+  margin: 2rem;
+  background-color:gold;
+  padding: 15px;
+  box-shadow: 0px 0px 0px 8px yellow inset;
+  border-radius: 15px;
+}
+.pokemon-card-fighting {
+  width: 25%;
+  max-width: 200px;
+  margin: 2rem;
+  background-color:indianred;
+  padding: 15px;
+  box-shadow: 0px 0px 0px 8px yellow inset;
+  border-radius: 15px;
+}
+.pokemon-card-rock {
+  width: 25%;
+  max-width: 200px;
+  margin: 2rem;
+  background-color:slategrey;
+  padding: 15px;
+  box-shadow: 0px 0px 0px 8px yellow inset;
+  border-radius: 15px;
+}
+.pokemon-card-psychic {
+  width: 25%;
+  max-width: 200px;
+  margin: 2rem;
+  background-color:magenta;
+  padding: 15px;
+  box-shadow: 0px 0px 0px 8px yellow inset;
+  border-radius: 15px;
+}
+.pokemon-card-ghost {
+  width: 25%;
+  max-width: 200px;
+  margin: 2rem;
+  background-color:whitesmoke;
+  padding: 15px;
+  box-shadow: 0px 0px 0px 8px yellow inset;
+  border-radius: 15px;
+}
+.pokemon-card-ground {
+  width: 25%;
+  max-width: 200px;
+  margin: 2rem;
+  background-color:brown;
+  padding: 15px;
+  box-shadow: 0px 0px 0px 8px yellow inset;
+  border-radius: 15px;
+}
+.pokemon-card-fairy {
+  width: 25%;
+  max-width: 200px;
+  margin: 2rem;
+  background-color:mediumslateblue;
+  padding: 15px;
+  box-shadow: 0px 0px 0px 8px yellow inset;
+  border-radius: 15px;
+}
+.pokemon-card-dragon {
+  width: 25%;
+  max-width: 200px;
+  margin: 2rem;
+  background-color:orange;
+  padding: 15px;
+  box-shadow: 0px 0px 0px 8px yellow inset;
+  border-radius: 15px;
+}
+.pokemon-card-ice {
+  width: 25%;
+  max-width: 200px;
+  margin: 2rem;
+  background-color:royalblue;
   padding: 15px;
   box-shadow: 0px 0px 0px 8px yellow inset;
   border-radius: 15px;
