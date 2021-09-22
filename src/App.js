@@ -24,34 +24,36 @@ class App extends Component {
           pokeURLS.push(pokemon)
         })
       })
-      this.setState({pokemons : pokeURLS})
     })
+    let sorted = pokeURLS.sort((a, b) => a.id - b.id)
+    this.setState({pokemons : sorted})
+    console.log('mounted!')
   }
 
   handleChange = (event) => {
-    console.log('are hyou showing', event.target.value)
     this.setState({[event.target.name] : event.target.value})
   }
 
   filteredPokemon = () => {
-    // console.log('this is in filter', this.state.pokemons)
     return this.state.pokemons.filter(pokemon => {
-      if(this.state.search === ''){
+      if(this.state.search === '') {
         return true
-    } else {
+      } else {
         return pokemon.name.toLowerCase().includes(this.state.search.toLowerCase())
-    }
-  })
-}
+      }
+    })
+  }
   
     
     render() {
       return (
-        <div className="App">
+      <div className="App">
         <h1 className='page-title'>Pokémon</h1>
+        <div>
         <SearchBar handleChange={ this.handleChange }/>
-        {/* <Container pokemons={ this.state.pokemons }/> */}
-        <Container pokemons={ this.filteredPokemon() }/>
+        </div>
+        <Container pokemons={ this.state.pokemons }/>
+        {/* <Container pokemons={ this.filteredPokemon() }/> */}
       </div>
     );
   }

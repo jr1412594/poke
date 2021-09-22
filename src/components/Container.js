@@ -1,16 +1,12 @@
 import Card from './Card'
 
 export default function Container({ pokemons }) {
-
-    console.log('container : ', pokemons)
+    console.log('container actual: ', pokemons)
     const displayPokemon = () => {
-        if(pokemons === undefined){
-            return 'Loading'
-        } else { 
-        return pokemons.map(pokemon => (
-            <Card pokemon={ pokemon } key={ pokemon.id } />
-        ))
-    }}
+            return pokemons.map(pokemon => {
+                return <Card pokemon={ pokemon } key={ pokemon.id } />
+            })
+    }
 
     return(
         <div className='card-container'>
