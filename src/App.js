@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css';
-import Container from './components/Container';
-import SearchBar from './components/SearchBar';
+import PokemonContainer from './components/PokemonContainer';
+// import SearchBar from './components/SearchBar';
 
 const baseUrl = 'https://pokeapi.co/api/v2/pokemon?limit=151'
 
@@ -9,7 +9,7 @@ class App extends Component {
 
   state = {
     pokemons : [],
-    search : ''
+    // search : ''
   }
 
   componentDidMount(){
@@ -29,14 +29,16 @@ class App extends Component {
     this.setState({pokemons : sorted})
     console.log('mounted!')
   }
-
+  
   handleChange = (event) => {
-    this.setState({[event.target.name] : event.target.value})
+    const name = event.target.name;
+    const value = event.target.value;
+    this.setState({[name] : value})
   }
 
   filteredPokemon = () => {
     return this.state.pokemons.filter(pokemon => {
-      if(this.state.search === '') {
+      if(this.state.search === ''){
         return true
       } else {
         return pokemon.name.toLowerCase().includes(this.state.search.toLowerCase())
@@ -44,16 +46,17 @@ class App extends Component {
     })
   }
   
+  render() {
     
-    render() {
-      return (
+    // const { search } = this.state
+    return (
       <div className="App">
         <h1 className='page-title'>Pokémon</h1>
-        <div>
-        <SearchBar handleChange={ this.handleChange }/>
-        </div>
-        <Container pokemons={ this.state.pokemons }/>
-        {/* <Container pokemons={ this.filteredPokemon() }/> */}
+        {/* <div>
+        <SearchBar handleChange={ this.handleChange } search={ search }/>
+        </div> */}
+        <PokemonContainer pokemons={ this.state.pokemons }/>
+        {/* <PokemonContainer pokemons={ this.filteredPokemon() }/> */}
       </div>
     );
   }

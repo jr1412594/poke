@@ -1,4 +1,4 @@
-// import React from 'react'
+import React from 'react'
 
 import { IoIosWater } from 'react-icons/io'
 import { AiFillFire } from 'react-icons/ai'
@@ -16,7 +16,7 @@ import { GiSevenPointedStar } from 'react-icons/gi'
 import { GiGroundbreaker } from 'react-icons/gi'
 
 export default function Card({ pokemon }) {
-    console.log('pokemon: ', pokemon)
+    // console.log('pokemon: ', pokemon)
     const typeSpect = pokemon.types[0].type.name
 
     const icon = () => {
@@ -54,7 +54,7 @@ export default function Card({ pokemon }) {
             <div className='specs'>
                 <h4 className='height'>Height: { pokemon.height }</h4>
                 <h4 className='weight'>Weight: { pokemon.weight }</h4>
-                <h4 className='weight'>id: { pokemon.id }</h4>
+                {/* <h4 className='weight'>id: { pokemon.id }</h4> */}
             </div>
                 <h4 className='experience'>Xp: { pokemon.base_experience }</h4>
         </div>
